@@ -24,9 +24,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <div class="afpbrand">
+      <div class="mr-2">
         <a href="index.html"><img src="img/Logo.png" alt="" class="logo" height="70" width="230" />
         </a>
       </div>
@@ -37,7 +37,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="allstories.html" role="button" data-toggle="dropdown" aria-haspopup="true"
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">Stories</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="allstories.html">All Stories</a>
@@ -59,10 +59,10 @@
             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
                 class="fas fa-user-circle"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a href="#myModal" class="dropdown-item" data-toggle="modal"><i class="fas log fa-sign-in-alt"></i> Login</a>
+              <a class="dropdown-item" href="#"><i class="fas log fa-sign-in-alt"></i> Login</a>
               <!-- Space used for padding -->
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="register.html"><i class="fas log fa-user-plus"></i> Register</a>
+              <a class="dropdown-item" href="#"><i class="fas log fa-user-plus"></i> Register</a>
               <!-- Space used for padding -->
             </div>
           </li>
@@ -71,48 +71,24 @@
     </div>
   </nav>
 
-  <nav class="history text-light bg-military">
+  <nav class="navbar navbar-expand-lg navbar-dark text-light bg-secondary">
     <div class="container">
-      <div class="row">
-        <p class="today">Today in History: </p>
-        <p class="day ml-3">Aug 4, 1944 - This interesting happend on this day specifically.</p>
-      </div>
+      <ul class="navbar-nav">
+        <li class="navbar-item row">
+          <div class="today">
+            <a class="navbar-link ml-4">Today in History: </a>
+          </div>
+          <div>
+            <a class="ml-4">Aug 4, 1944 - This interesting happend on this day specifically.</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </nav>
 
-  <div id="myModal" class="modal fade">
-    <div class="modal-dialog modal-login">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Member Login</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        </div>
-        <div class="modal-body">
-          <form action="/examples/actions/confirmation.php" method="post">
-            <div class="form-group">
-              <i class="fa fa-envelope"></i>
-              <input type="text" class="form-control" placeholder="Email" required="required">
-            </div>
-            <div class="form-group">
-              <i class="fa fa-lock"></i>
-              <input type="password" class="form-control" placeholder="Password" required="required">
-            </div>
-            <div class="form-group">
-              <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
-            </div>
-          </form>
-
-        </div>
-        <div class="modal-footer">
-          <a href="#">Forgot Password?</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="main">
     <div class="container">
-      <div class="jumbotron mt-5">
+      <div class="jumbotron mt-5 mb-5">
         <h2 class="d-flex justify-content-center">The Host & Program</h2> <!-- Our Vision (?) -->
         <hr class="jumbohr" />
         <img class="aboutpic" src="img/about.jpg" />
@@ -153,22 +129,22 @@
             the best he can, with all he’s got, to preserve the fading stories of
             our greatest generation.
           </p>
+          <div class="ssk-group">
+            <a href="" class="ssk ssk-facebook"></a>
+            <a href="" class="ssk ssk-twitter"></a>
+            <a href="" class="ssk ssk-google-plus"></a>
+            <a href="" class="ssk ssk-pinterest"></a>
+            <a href="" class="ssk ssk-tumblr"></a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-  <br><br><br><br>
-  <footer class="footer bg-darker text-light">
-    <div class="ssk-group ssk-md d-flex justify-content-center">
-      <a href="https://www.youtube.com/AndyFancher" class="ssk ssk-youtube"></a>
-      <a href="https://www.instagram.com/realandyfancher/" class="ssk ssk-instagram"></a>
-      <a href="https://www.facebook.com/RealAndyFancher/" class="ssk ssk-facebook"></a>
-      <a href="https://twitter.com/RealAndyFancher" class="ssk ssk-twitter"></a>
-      <a href="https://www.linkedin.com/in/andrew-fancher-558622158/" class="ssk ssk-linkedin"></a>
-    </div>
-    <p>© 2018 Chase Shields. All Rights Reserved.</p>
-  </footer>
+  <div class="mt-5 mb-5">
+    <footer class="bg-dark text-light">
+      <p>© 2018 Chase Shields. All Rights Reserved.</p>
+    </footer>
+  </div>
 </body>
 
 </html>
