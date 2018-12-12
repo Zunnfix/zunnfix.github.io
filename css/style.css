@@ -27,7 +27,7 @@ a:hover {
     max-width: 840px;
 }
 .bg-military {
-    background-color: #495979;
+    background-color: #4e6083;
 }
 .bg-darker {
     background-color: #313131;
@@ -36,16 +36,19 @@ nav>.container {
     max-width: 1180px;
 }
 .navbar {
-    height: 100px;
+    padding: 0px 15px;
 }
 .navbar-brand {
     font-weight: 500;
+}
+.logo {
+    margin-right: 15px;
 }
 .nav-item {
     margin-right: .5em;
 }
 .afpbrand {
-    margin: 15px 15px;
+    margin: 15px 0px;
 }
 .history {
     height: 40px;
@@ -151,7 +154,7 @@ nav>.container {
 
 /*  Login Form  */
 .modal-dialog {
-    margin: 10em auto;
+    margin: 14em auto;
 }
 .modal-login {
     color: #414141;
@@ -204,7 +207,8 @@ nav>.container {
     border: none;
     line-height: normal;
 }
-.modal-login .btn:hover, .modal-login .btn:focus {
+.modal-login .btn:hover, 
+.modal-login .btn:focus {
     background: #24629c;
 }
 .modal-login .modal-footer {
@@ -240,7 +244,7 @@ nav>.container {
 .signup-form{
     width: 400px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 .signup-form h2{
     color: #636363;
@@ -248,7 +252,8 @@ nav>.container {
     position: relative;
     text-align: center;
 }
-.signup-form h2:before, .signup-form h2:after{
+.signup-form h2:before, 
+.signup-form h2:after{
     content: "";
     height: 2px;
     width: 30%;
@@ -373,16 +378,16 @@ div>.card-body {
     margin: 0px 3px;
 }
 .ssk-youtube {
-    background-color: #ff0000
+    background-color: #ff0000;
 }
 .ssk-youtube:hover {
-    background-color: #ce0000
+    background-color: #ce0000;
 }
 .ssk-instagram {
-    background-color: #fb3958
+    background-color: #fb3958;
 }
 .ssk-instagram:hover {
-    background-color: #d12f4a
+    background-color: #d12f4a;
 }
 /* End */
 
