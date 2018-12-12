@@ -1,2 +1,2 @@
-# AFP
-Andy Fancher Presents
+# Andy Fancher Presents
+The official webiste for Andy Fancher Presents
