@@ -26,8 +26,8 @@ a:hover {
 .jumbohr {
     max-width: 840px;
 }
-.bg-alt {
-    background-color: #475f8a;
+.bg-military {
+    background-color: #4e6083;
 }
 .bg-darker {
     background-color: #313131;
@@ -51,12 +51,12 @@ nav>.container {
     margin: 15px 0px;
 }
 .history {
-    height: 40px; /* Causes break when collapsing */
-    padding-top: .47em; 
+    height: 40px;
+    padding-top: .36rem; 
 }
 .today {
     font-weight: 600;
-    margin-left: 1.2rem;
+    margin-left: 2.2rem;
 }
 .toplink>a {
     margin: 1em 1em 1em 1em; 
@@ -84,9 +84,6 @@ nav>.container {
 }
 .fa-search {
     font-size: 18px;
-}
-.log {
-    font-size: 1.1em;
 }
 .intro-vid {
     width: 1110px;
@@ -259,7 +256,7 @@ nav>.container {
 .signup-form h2:after{
     content: "";
     height: 2px;
-    width: 27%;
+    width: 30%;
     background: #d4d4d4;
     position: absolute;
     top: 50%;
@@ -297,16 +294,11 @@ nav>.container {
     outline: none !important;
 }
 .signup-form .row div:first-child{
-    padding-right: 15px;
+    padding-right: 10px;
 }
 .signup-form .row div:last-child{
-    padding-left: 15px;
-}   
-@media (max-width:576px) {
-    .signup-form .row div:last-child{
-        padding-top: 1.1em;
-    }    	
-}
+    padding-left: 10px;
+}    	
 .signup-form a{
     color: #fff;
     text-decoration: underline;
@@ -314,34 +306,12 @@ nav>.container {
 .signup-form a:hover{
     text-decoration: none;
 }
-.signup-form form {
-    font-size: .92em;
-}
 .signup-form form a{
-    color: #638fc7;
+    color: #5cb85c;
     text-decoration: none;
 }	
 .signup-form form a:hover{
     text-decoration: underline;
-}
-.btn-reg {
-    background-color: #2c78c0;
-}
-.btn-reg:hover {
-    background-color: #24629c;
-}
-@media (min-width: 576px) {
-    .signup-form .row div:first-child{
-        padding-right: 10px;
-    }
-    .signup-form .row div:last-child{
-        padding-left: 10px;
-    } 
-}
-@media (max-width: 576px) {
-    .signup-form {
-        width: 350px;
-    }
 }
 /*  End  */
 
@@ -353,13 +323,13 @@ div>.card-body {
     padding: .7em 1.6em;
 }
 .card-img-top {
-    object-fit: fill;
+    object-fit: cover;
     max-height: 100%;
     max-width: 100%;
-    height: 200px;
+    height: 190px;
 }
 .btn-outline-warning {
-    color: #ffc107;
+    color: ffc107;
     background-color: #ffffff00;
     border-color: #ffc107; 
 }
@@ -372,6 +342,9 @@ div>.card-body {
 }
 .btn-outline-secondary {
     background-color: white;
+}
+.log {
+    font-size: 1.1em;
 }
 .btn1 {
     position: absolute;
