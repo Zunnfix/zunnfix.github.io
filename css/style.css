@@ -50,6 +50,12 @@ nav>.container {
 .nav-item {
     margin-right: .5em;
 }
+.dropdown-menu {
+    margin-bottom: 1em;
+}
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
 .afpbrand {
     margin: 15px 0px;
 }
@@ -157,12 +163,7 @@ nav>.container {
 
 /*  Login Form  */
 .modal-dialog {
-    margin: 15em auto;
-}
-@media (max-width: 576px) {
-    .modal-dialog {
-        margin: 5em auto 4em auto;
-    }
+    margin: 16em auto 28em;
 }
 .modal-login {
     color: #414141;
@@ -250,7 +251,7 @@ nav>.container {
     border-radius: 3px;
 }
 .signup-form{
-    width: 400px;
+    width: 420px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -331,6 +332,10 @@ nav>.container {
     }
     .signup-form{
         width: 350px;
+    }
+    .modal-dialog {
+        margin: 5em auto 4em auto;
+    }
 }
 /*  End  */
 
