@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Andy Fancher Presents</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/social-share-kit.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/social-share-kit.js"></script>
+  <script src="js/social-share-kit.min.js"></script>
+  <link rel="icon" href="img/favicon.ico" type="img/x-icon" />
+  <style>
+    #header {
+        background: url("img/soldiers.jpg") top center / cover no-repeat;
+        /* background: url("imgs/header.jpeg") center center / cover no-repeat */
+      }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="mr-2">
+        <a href="index.html"><img src="img/Logo.png" alt="" class="logo" height="70" width="230" />
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Stories<span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="allstories.html">All Stories</a>
+              <a class="dropdown-item" href="#">Vlog</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="yourstory.html">Tell Your Story</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+        </ul>
+        <!-- 
+        == Default Bootstrap Search Bar ==
+            <form class="form-inline mr-auto ml-auto"> 
+                -- <form class="form-inline my-2 my-lg-0"> --
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>  
+         -->
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                class="fas fa-user-circle"></i></a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#"><i class="fas log fa-sign-in-alt"></i> Login</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i class="fas log fa-user-plus"></i> Register</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark text-light bg-secondary">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="navbar-item row">
+          <div class="today">
+            <a class="navbar-link ml-4">Today in History: </a>
+          </div>
+          <div>
+            <a class="ml-4">Aug 4, 1944 - This interesting happend on this day specifically.</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="form mt-5">
+    <div class="container">
+      <div class="jumbotron">
+        <form class="form-col">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputFirst">First Name</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputLast">Last Name</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="inputBranch">Branch</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-7">
+              <label for="inputRank">Rank</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="inputYear">Years Served</label>
+              <select id="inputYear" class="form-control">
+                <option selected>Choose...</option>
+                <option>1930</option>
+                <option>1931</option>
+                <option>1932</option>
+                <option>1933</option>
+                <option>1934</option>
+                <option>1935</option>
+                <option>1936</option>
+                <option>1937</option>
+                <option>1938</option>
+                <option>1939</option>
+                <option>1940</option>
+                <option>1941</option>
+                <option>1942</option>
+                <option>1943</option>
+                <option>1944</option>
+                <option>1945</option>
+                <option>1946</option>
+                <option>1947</option>
+                <option>1948</option>
+                <option>1949</option>
+                <option>1950</option>
+                <option>1951</option>
+                <option>1952</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="inputYear">Years Served</label>
+              <select id="inputYear" class="form-control">
+                <option selected>Choose...</option>
+                <option>1930</option>
+                <option>1931</option>
+                <option>1932</option>
+                <option>1933</option>
+                <option>1934</option>
+                <option>1935</option>
+                <option>1936</option>
+                <option>1937</option>
+                <option>1938</option>
+                <option>1939</option>
+                <option>1940</option>
+                <option>1941</option>
+                <option>1942</option>
+                <option>1943</option>
+                <option>1944</option>
+                <option>1945</option>
+                <option>1946</option>
+                <option>1947</option>
+                <option>1948</option>
+                <option>1949</option>
+                <option>1950</option>
+                <option>1951</option>
+                <option>1952</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your Story</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="14"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <div class="mt-5">
+      <footer class="bg-dark text-light">
+        <p>© 2018 Chase Shields. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+</body>
+
+</html>
