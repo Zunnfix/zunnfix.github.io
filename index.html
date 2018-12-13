@@ -26,14 +26,21 @@
         background: url("img/soldiers.jpg") top center / cover no-repeat;
         /* background: url("imgs/header.jpeg") center center / cover no-repeat */
       }
-    </style>
+  </style>
+  <script type="text/javascript">
+    // $(document).ready(function () {
+    //   $(".share-icon i").hover(function () {
+    //     $(this).toggleClass("fas far");
+    //   });
+    // });
+  </script>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-darker">
     <div class="container">
       <div class="afpbrand">
-        <a href="index.html"><img src="img/Logo.png" alt="" class="logo" height="70" width="230" /></a>
+        <a href="index.html"><img src="img/Logo.png" alt="" class="" height="70" width="230" /></a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +50,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="allstories.html" role="button" data-toggle="dropdown"
@@ -62,17 +69,9 @@
             <a class="nav-link" href="donate.html">Donate</a>
           </li>
         </ul>
-        <!-- == Default Bootstrap Search Bar ==
-            <form class="form-inline mr-auto ml-auto"> 
-                -- <form class="form-inline my-2 my-lg-0"> --
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>  
-         -->
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                class="fas fa-user-circle"></i></a>
+            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
               <a href="#myModal" class="dropdown-item" data-toggle="modal"><i class="fas log fa-sign-in-alt"></i> Login</a>
               <div class="dropdown-divider"></div>
@@ -159,12 +158,10 @@
                       <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
                       <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
                     </div>
-                    <div class="btn3 dropdown dropup">
-                      <!-- class='btn3' has to be used twice in parent and child tags because class='dropup' changes "position" 
-                          to 'relative', when it needs to stay 'absolute' for the button to stay in the correct position. -->
-                      <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-share"></i>
-                      </a>
+                    <div class="btn3 share-icon dropdown dropup">
+                      <!-- class='btn3' has to be used twice in parent and child tags because class='dropup' changes "position" to 'relative', when it needs to stay 'absolute' for the button to stay in the correct position. -->
+                      <a class="btn3" href="#" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="false"><i class="fas fa-share-square"></i></a>
                       <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
@@ -185,7 +182,7 @@
                       <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
                       <div class="btn3 dropdown dropup">
                         <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                          aria-expanded="false"><i class="fas fa-share-square"></i></a>
                         <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
@@ -206,7 +203,7 @@
                       <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
                       <div class="btn3 dropdown dropup">
                         <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+                          aria-expanded="false"><i class="fas fa-share-square"></i></a>
                         <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
