@@ -16,10 +16,13 @@ body::after {
     display: block;
     height: 100px;
 }
+hr {
+    height: 3px;
+    color: #212529;
+}
 .nav-item>a {
     color: #212529;
 }
-
 .jumbohr {
     max-width: 840px;
 }
@@ -29,14 +32,17 @@ body::after {
 .bg-darker {
     background-color: #313131;
 }
+.bg-grey {
+    background-color: #f2f0f0;
+}
 nav>.container {
     max-width: 1180px;
 }
 .navbar {
-    padding: 0px 15px;
+    padding: 0px 0px;
 }
 .navbar-toggler {
-    margin-right: .5em;
+    margin-right: 1.2em;
 }
 .navbar-brand {
     font-weight: 500;
@@ -46,7 +52,7 @@ nav>.container {
     margin-bottom: .5em;
 }
 .dropdown-menu {
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 .dropdown-item:hover {
     background-color: #f0f0f0;
@@ -61,7 +67,7 @@ nav>.container {
 }
 .history {
     height: 40px;
-    padding-top: .36rem; 
+    padding-top: .42rem; 
 }
 .today {
     font-weight: 600;
@@ -101,34 +107,6 @@ nav>.container {
     margin: 0px 0px;
     border-radius: 0px;
 }
-.jumbocard {
-    max-width: 1110px;
-    margin: 2em 0em;
-}
-.jumbocard>.card>.header {
-    background-color: #f4f4f4;
-}
-.justify-content-between .card {
-    margin: 1.1em 0em;
-}
-.header {
-    height: 65px;
-}
-.card-header.header {
-    height: 65px;
-    padding: 18px 0px 18px 20px; 
-}
-.card-header.input-group {
-    height: 65px;
-}
-.container>.jumbocard>.card>.row {
-    margin: 0px 0px 0px 0px;
-}
-.jumbotron>div>p {
-    text-align: justify;
-    font-size: 16px;
-    padding: 10px 55px 0px 55px;
-}
 @media (min-width: 576px) {
     .intro-vid {
         width: 510px;
@@ -159,12 +137,24 @@ nav>.container {
         padding: 2em 2.5em;
     }
 }
-
 .aboutpic {
-    height: 300px;
-    width: 300px;
-    float: right;
-    margin: 18px 56px 0px 12px;
+    height: 360px;
+    width: 360px; 
+    /* float: right; */
+    margin: 10px 0px 0px 0px;
+}
+.about-p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 13px 16px;
+}
+@media (min-width: 576px) {
+    .aboutpic {
+        height: 300px;
+        width: 300px;
+        float: right;
+        margin: 18px 56px 0px 12px;
+    }
 }
 .patreon {
     height: 80px;
@@ -359,15 +349,44 @@ nav>.container {
 
 /*  Card Content  */
 div>.card-body {
-    min-height: 265px;
+    min-height: 250px;
 }
 .card-body.bg-light {
-    padding: 0px .9em;
+    padding: 0em .9em;
 }
 @media (min-width: 576px) {
     .card-body.bg-light {
-        padding: .7em 1.6em;
+        padding: .4em 1.2em;
     }
+}
+.jumbocard {
+    max-width: 1110px;
+    margin: 2em 0em;
+}
+.jumbocard>.card .card {
+    margin: 1em 0em;
+}
+.jumbocard>.card>.header {
+    background-color: #f4f4f4;
+}
+.header {
+    height: 65px;
+}
+.justify-content-between .card {
+    margin: 1.1em 0em;
+}
+.card-header {
+    padding: .7em .95em;
+}
+.card-header.header {
+    height: 65px;
+    padding: 18px 0px 18px 20px; 
+}
+.card-header.input-group {
+    height: 65px;
+}
+.container>.jumbocard>.card>.row {
+    margin: 0px 0px 0px 0px;
 }
 .card-img-top {
     object-fit: cover;

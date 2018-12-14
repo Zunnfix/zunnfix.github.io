@@ -88,7 +88,7 @@
     <div class="container">
       <div class="row">
         <p class="today">Today in History: </p>
-        <p class="day ml-3">Aug 4, 1944 - This interesting happend on this day specifically.</p>
+        <p class="day ml-3">Aug 4, 1944</p>
       </div>
     </div>
   </nav>
@@ -123,65 +123,37 @@
     </div>
   </div>
 
-  <section id="gallery">
-    <div class="container allstories">
-      <div class="jumbotron">
-        <!-- Search Bar -->
-        <div class="row justify-content-between">
-          <div class="toplink ml-4">
-            <a href="allstories.html">All Posts</a>
-          </div>
-          <div class="input-group col-md-12 col-lg-6 col-xl-4 mb-4">
-            <input class="form-control py-2 border-right-0 border" type="search" placeholder="Search" id="example-search-input">
-            <span class="input-group-append">
-              <button class="btn btn-outline-secondary border-left-0 border" type="button">
-                <i class="fa fa-search"></i>
-              </button>
-            </span>
-          </div>
+  <!-- Story Cards -->
+  <div class="container">
+    <div class="jumbocard">
+      <div class="card text-center mb-5">
+        <div class="card-header bg-grey">
+          <nav class="navbar navbar-light bg-grey">
+            <a class="navbar-brand">Veteran Testimonies</a>
+            <div>
+              <form class="search-btn form-inline">
+                <button class="btn btn-outline-secondary border" type="button">
+                  <i class="fa fa-search"></i>
+              </form>
+            </div>
+          </nav>
         </div>
-        <!-- First Card -->
-        <div class="card-columns">
-          <div class="mb-2">
-            <div class="card">
-              <img class="card-img-top" src="img/Warren.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Diagonal Glass</h5>
-                <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  corrupti,
-                  aspernatur eveniet, soluta temporibus? Dicta magni.</p>
-                <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
-                <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
-              </div>
-              <div class="btn3 dropdown dropup">
-                <!-- class='btn3' has to be used twice in parent and child tags because class='dropup' changes "position" 
-                  to 'relative', when it needs to stay 'absolute' for the button to stay in the correct position. -->
-                <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-share"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+        <div class="card-body bg-light">
+
+          <div class="row">
+            <div class="col-sm-12 col-lg-6 col-xl-4">
+              <div class="card">
+                <img class="card-img-top" src="img/Warren.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Robert Warren Roach</h5>
+                  <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                    corrupti, aspernatur eveniet? Soluta id est quod maxime temporibus dicta magni quidem...</p>
+                  <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
+                  <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-2">
-            <div class="card">
-              <img class="card-img-top" src="img/Sonny.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Colored</h5>
-                <p class="card-text text-justify">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                  tempore, cum soluta impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
-                  assumenda
-                  est.</p>
-                <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
-                <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
-                <div class="btn3 dropdown dropup">
-                  <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                      class="fas fa-ellipsis-v"></i></a>
+                <div class="btn3 share-icon dropdown dropup">
+                  <!-- class='btn3' has to be used twice in parent and child tags because class='dropup' changes "position" to 'relative', when it needs to stay 'absolute' for the button to stay in the correct position. -->
+                  <a class="btn3" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-share-square"></i></a>
                   <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
@@ -191,94 +163,121 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="mb-2">
-            <div class="card">
-              <img class="card-img-top" src="img/Rip.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Header</h5>
-                <p class="card-text text-justify">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-                  fugit, sed quia consequuntur magni dicta omnis qui es voluptatem sequi ad nesciunt. Neque quisquam
-                  est, ipsum quiar modi...</p>
-                <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
-                <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
-                <div class="btn3 dropdown dropup">
-                  <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                      class="fas fa-ellipsis-v"></i></a>
-                  <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+
+            <div class="col-sm-12 col-lg-6 col-xl-4">
+              <div class="card">
+                <img class="card-img-top" src="img/Sonny.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">John “Sonny” East</h5>
+                  <p class="card-text text-justify">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                    libero tempore, cum soluta impedit quo minus id quod maxime quidem et quo placeat facere
+                    possimus...</p>
+                  <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
+                  <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
+                  <div class="btn3 dropdown dropup">
+                    <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-share-square"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="mb-2">
-            <div class="card">
-              <img class="card-img-top" src="img/Mel.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Header</h5>
-                <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  corrupti,
-                  aspernatur eveniet, soluta assumenda cum dicta omnis mollitia nihil maiores ad temporibus ab? Dicta
-                  doloremque.</p>
-                <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
-                <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
-                <div class="btn3 dropdown dropup">
-                  <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                      class="fas fa-ellipsis-v"></i></a>
-                  <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+
+            <div class="col-sm-12 col-lg-6 col-xl-4">
+              <div class="card">
+                <img class="card-img-top" src="img/Rip.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Vernon “Rip” Ribera</h5>
+                  <p class="card-text text-justify">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                    fugit, sed quia consequuntur magni dicta omnis qui es rerum facilis voluptatem sequi ad nesciunt
+                    neque...</p>
+                  <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
+                  <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
+                  <div class="btn3 dropdown dropup">
+                    <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="fas fa-share-square"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="mb-2">
-            <div class="card">
-              <img class="card-img-top" src="img/Sparks.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Header</h5>
-                <p class="card-text text-justify">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                  tempore, cum soluta nobis est cumque nihil impedit quo id quod maxime placeat
-                  facere.</p>
-                <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
-                <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
-                <div class="btn3 dropdown dropup">
-                  <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                      class="fas fa-ellipsis-v"></i></a>
-                  <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+
+            <div class="col-sm-12 col-lg-6 col-xl-4">
+              <div class="card">
+                <img class="card-img-top" src="img/Mel.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Header</h5>
+                  <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                    corrupti, aspernatur eveniet, soluta assumenda mollitia nihil maiores ad
+                    temporibus ab doloremque...</p>
+                  <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
+                  <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
+                  <div class="btn3 dropdown dropup">
+                    <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="fas fa-share-square"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="mb-2">
-            <div class="card">
-              <img class="card-img-top" src="img/Gene.png" alt="">
-              <div class="card-body">
-                <h5 class="card-title">Header</h5>
-                <p class="card-text text-justify">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit nam
-                  fugit, sed quia qui ratione voluptatem es sequi nesciunt. Quisquam est, ipsum quiar amet.</p>
-                <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
-                <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
-                <div class="btn3 dropdown dropup">
-                  <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                      class="fas fa-ellipsis-v"></i></a>
-                  <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+
+            <div class="col-sm-12 col-lg-6 col-xl-4">
+              <div class="card">
+                <img class="card-img-top" src="img/Sparks.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Header</h5>
+                  <p class="card-text text-justify">Et harum quidem rerum facilis est et expedita distinctio. Nam
+                    libero tempore, cum soluta nobis est cumque nihil impedit quo id quod maxime placeat...</p>
+                  <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
+                  <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
+                  <div class="btn3 dropdown dropup">
+                    <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="fas fa-share-square"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6 col-xl-4">
+              <div class="card">
+                <img class="card-img-top" src="img/Gene.png" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Header</h5>
+                  <p class="card-text text-justify">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit nam fugit, sed quia qui ratione voluptatem es sequi nesciunt. Quisquam est, ipsum quiar
+                    amet...</p>
+                  <a href="#" class="btn btn-outline-primary btn-md btn1">Read More...</a>
+                  <a href="#" class="btn btn-outline-warning btn-md btn2"><i class="fas fa-star"></i></a>
+                  <div class="btn3 dropdown dropup">
+                    <a class="btn3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="fas fa-share-square"></i></a>
+                    <div class="dropdown-menu dropdown-menu-right shadow mb-3" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -286,9 +285,11 @@
           </div>
         </div>
       </div>
-  </section>
+    </div>
+  </div>
+  </div>
 
-  <br><br>
+  <br><br><br>
   <div class="">
     <footer class="bg-darker text-light">
       <div class="ssk-group ssk-md d-flex justify-content-center">
