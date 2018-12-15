@@ -100,8 +100,8 @@ nav>.container {
     font-size: 18px;
 }
 .intro-vid {
-    width: 510px;
-    height: 206px;
+    height: 276px;
+    width: 100%;
 }
 .allstories>.jumbotron {
     margin: 0px 0px;
@@ -323,10 +323,20 @@ nav>.container {
     height: auto;
     margin: -0px 0px 0px 0px;
 }
-.about-p {
+.sonnypic {
+    max-width: 100%; 
+    height: auto;
+}
+.sonnypic2 {
+    height: 300px;
+    width: 220px;
+    float: left;
+    margin: 8px 12px 0px 16px;
+}
+.card-p {
     text-align: justify;
     font-size: 1em;
-    padding: 13px 16px;
+    padding: 0px 16px;
 }
 .main>.card {
     border-radius: 0px;
@@ -341,6 +351,17 @@ nav>.container {
         float: right;
         margin: 20px 17px 0px 14px;
     }
+    .sonnypic {
+        height: 340px;
+        width: 530px;
+        float: right;
+        margin: 20px 17px 0px 14px;
+    }
+    .sonnypic2 {
+        height: 340px;
+        width: 250px;
+        margin: 8px 17px 0px 14px;
+    }
     .main>.card {
         padding: 0px;
         margin-right: auto;
@@ -351,7 +372,7 @@ nav>.container {
         padding: 10px;
     }
     .main>.card {
-        margin: 32px auto 40px auto;
+        margin: 40px auto 30px auto;
         border-radius: 4px;
     }
 }
@@ -368,7 +389,7 @@ nav>.container {
     width: 240px;
 }
 div>.card-body {
-    min-height: 250px;
+    min-height: 260px;
 }
 .card-body.bg-light {
     padding: 0em .9em;
