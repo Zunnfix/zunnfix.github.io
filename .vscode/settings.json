@@ -1,2 +1,5 @@
 {
+    "editor.hover": false,
+	"editor.hover.enabled": false,
+	"editor.parameterHints": false
 }

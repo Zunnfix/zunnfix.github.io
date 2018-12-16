@@ -328,15 +328,15 @@ nav>.container {
     height: auto;
 }
 .sonnypic2 {
-    height: 300px;
-    width: 220px;
+    height: 14.3em;
+    width: 10em;
     float: left;
-    margin: 8px 12px 0px 16px;
+    margin: 6px 8px 0px 4px;
 }
 .card-p {
     text-align: justify;
     font-size: 1em;
-    padding: 0px 16px;
+    padding: 0px 4px;
 }
 .main>.card {
     border-radius: 0px;
@@ -367,13 +367,16 @@ nav>.container {
         margin-right: auto;
         margin-left: auto;
         width: 1110px;
+        margin: 30px auto 30px auto;
+        border-radius: 4px;
     }
     .card-body {
-        padding: 10px;
+        padding: 20px 25px;
     }
-    .main>.card {
-        margin: 40px auto 30px auto;
-        border-radius: 4px;
+    .card-p {
+        text-align: justify;
+        font-size: 1em;
+        padding: 0px;
     }
 }
 .patreon {
