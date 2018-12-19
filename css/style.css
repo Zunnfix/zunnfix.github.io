@@ -6,6 +6,7 @@ html {
     height: 100%;
 }
 body {
+    text-align: justify;
     min-height: 100%;
     padding: 0;
     margin: 0;
@@ -14,11 +15,14 @@ body {
 body::after {
     content: '';
     display: block;
-    height: 100px;
+    height: 160px;
 }
 hr {
     height: 3px;
     color: #212529;
+}
+iframe {
+    overflow: hidden;
 }
 .nav-item>a {
     color: #212529;
@@ -35,21 +39,26 @@ hr {
 .bg-grey {
     background-color: #f2f0f0;
 }
-nav>.container {
-    max-width: 1180px;
+.navbar>.container {
+    max-width: 1040px;
 }
 .navbar {
     padding: 0px 15px;
 }
 .navbar-toggler {
     margin-right: 0.4em;
+    margin-bottom: 0.1em;
 }
 .navbar-brand {
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 1.3em;
 }
 .nav-item {
     margin-right: .5em;
-    margin-bottom: .5em;
+    margin-bottom: 0em;
+}
+.nav-login {
+    margin: 0em 1em 0em 0em;
 }
 .dropdown-menu {
     margin-bottom: .5em;
@@ -66,12 +75,11 @@ nav>.container {
     }
 }
 .history {
-    height: 40px;
-    padding-top: .42rem; 
+    height: 8px;
+    padding-top: 0rem; 
 }
 .today {
     font-weight: 600;
-    margin-left: 2.2rem;
 }
 .toplink>a {
     margin: 1em 1em 1em 1em; 
@@ -90,7 +98,7 @@ nav>.container {
     max-width: 700px;
 }
 .main>.container{
-    max-width: 1000px;
+    max-width: 1006px;
 }
 .fa-user-circle {
     font-size: 1.5em;
@@ -121,14 +129,14 @@ nav>.container {
 }
 @media (min-width: 992px) {
     .intro-vid {
-        width: 930px;
+        width: 976px;
         height: 544px;
     }
 }
 @media (min-width: 1200px) {
     .intro-vid {
-        width: 1110px;
-        height: 625px;
+        width: 976px;
+        height: 546px;
     }
 }
 @media (min-width: 576px) {
@@ -141,11 +149,13 @@ nav>.container {
 
 /*  Login Form  */
 .modal-dialog {
-    margin: 16em auto 28em;
+    margin: 16em auto 10em;
+    padding-right: 0px;
 }
 .modal-login {
     color: #414141;
     width: 350px;
+    padding-right: 0px;
 }
 .modal-login .modal-content {
     padding: 20px;
@@ -318,10 +328,13 @@ nav>.container {
 /*  End  */
 
 /*  Card Content  */
+.search-btn>.btn {
+    padding: 0.5em .75em;
+}
 .aboutpic {
     max-width: 100%; 
     height: auto;
-    margin: -0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .sonnypic {
     max-width: 100%; 
@@ -334,22 +347,28 @@ nav>.container {
     margin: 6px 8px 0px 4px;
 }
 .card-p {
-    text-align: justify;
     font-size: 1em;
     padding: 0px 4px;
 }
 .main>.card {
     border-radius: 0px;
+    max-width: 970px;
 }
 .card-body {
-    padding: 0em;
+    padding: 1em;
+}
+.card-title {
+    margin: auto auto .6em auto;
 }
 @media (min-width: 576px) {
+    /* .container {
+        
+    } */
     .aboutpic {
         height: 340px;
         width: 490px;
         float: right;
-        margin: 20px 17px 0px 14px;
+        margin: 7px -1px 0px 12px;
     }
     .sonnypic {
         height: 340px;
@@ -370,13 +389,18 @@ nav>.container {
         margin: 30px auto 30px auto;
         border-radius: 4px;
     }
+    .card-columns {
+        column-gap: 15px;
+    }
     .card-body {
-        padding: 20px 25px;
+        padding: 12px 18px;
     }
     .card-p {
+        display: block;
         text-align: justify;
         font-size: 1em;
         padding: 0px;
+        line-height: 24px;
     }
 }
 .patreon {
@@ -395,11 +419,23 @@ div>.card-body {
     min-height: 260px;
 }
 .card-body.bg-light {
-    padding: 0em .9em;
+    padding: 0em .4em;
+}
+.card-body>.row>.col-sm-12.col-lg-6.col-xl-4 {
+    padding-right: 15px;
+    padding-left: 15px; 
 }
 @media (min-width: 576px) {
     .card-body.bg-light {
-        padding: .4em 1.2em;
+        padding: 0em 1.5em 20px;
+    }
+    .card-body>.row>.col-sm-12.col-lg-6.col-xl-4 {
+        max-height: 465px;
+        padding-right: 5px;
+        padding-left: 5px; 
+    }
+    .card-section>.card-body {
+        padding: 0em 15px;
     }
 }
 .jumbocard {
@@ -419,11 +455,11 @@ div>.card-body {
     margin: 1.1em 0em;
 }
 .card-header {
-    padding: .7em .95em;
+    padding: .6em .95em;
 }
-.card-header.header {
-    height: 65px;
-    padding: 18px 0px 18px 20px; 
+.card-header>.navbar {
+    height: 45px;
+    padding: 18px 0px 18px 6px; 
 }
 .card-header.input-group {
     height: 65px;
@@ -515,27 +551,33 @@ footer>p {
 
 @media (min-width:576px) {
     .card-columns {
-      column-count: 1;
+        column-count: 1;
+    }
+    .card-img-top {
+        height: 350px;
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:935px) {
     .card-columns {
-      column-count: 3;
+        column-count: 3;
+    }
+    .card-img-top {
+        height: 190px;
     }
 }
 @media (min-width:576px) {
     .allstories .card-columns {
-      column-count: 1;
+        column-count: 1;
     }
 }
 @media (min-width:992px) {
     .allstories .card-columns {
-      column-count: 2;
+        column-count: 2;
     }
 }
 @media (min-width:1200px) {
     .allstories .card-columns {
-      column-count: 3;
+        column-count: 3;
     }
 }
