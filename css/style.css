@@ -11,6 +11,10 @@ body {
     padding: 0;
     margin: 0;
     position: relative;
+    
+    background: url("../img/soldiers2.png") center / cover no-repeat;
+    background-position-y: 90px;
+
 }
 body::after {
     content: '';
@@ -31,7 +35,7 @@ iframe {
     max-width: 840px;
 }
 .bg-military {
-    background-color: #4e6083;
+    background-color: #3e5480;
 }
 .bg-darker {
     background-color: #313131;
@@ -40,7 +44,7 @@ iframe {
     background-color: #f2f0f0;
 }
 .navbar>.container {
-    max-width: 1040px;
+    max-width: 1038px;
 }
 .navbar {
     padding: 0px 15px;
@@ -67,7 +71,7 @@ iframe {
     background-color: #f0f0f0;
 }
 .afpbrand {
-    margin: 15px 15px;
+    margin: 10px 15px -10px;
 }
 @media (max-width: 576px) {
     .afpbrand {
@@ -75,8 +79,11 @@ iframe {
     }
 }
 .history {
-    height: 8px;
+    height: 37px;
     padding-top: 0rem; 
+}
+.history-p {
+    margin: 5px 0px 0px 219px;
 }
 .today {
     font-weight: 600;
@@ -94,11 +101,15 @@ iframe {
 .display-3 {
     font-weight: 400;
 }
+.top-section {
+
+}
 .form>.container {
     max-width: 700px;
 }
 .main>.container{
     max-width: 1006px;
+    margin-top: 2em;
 }
 .fa-user-circle {
     font-size: 1.5em;
@@ -130,7 +141,7 @@ iframe {
 @media (min-width: 992px) {
     .intro-vid {
         width: 976px;
-        height: 544px;
+        height: 546px;
     }
 }
 @media (min-width: 1200px) {
@@ -440,7 +451,7 @@ div>.card-body {
 }
 .jumbocard {
     max-width: 1110px;
-    margin: 2em 0em;
+    margin: 0em 0em 2em;
 }
 .jumbocard>.card .card {
     margin: 1em 0em;
