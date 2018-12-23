@@ -45,9 +45,10 @@ iframe {
 }
 .navbar>.container {
     max-width: 1038px;
+    padding-top: 0px; 
 }
 .navbar {
-    padding: 0px 15px;
+    padding: 0px 15px 0px;
 }
 .navbar-toggler {
     margin-right: 0.4em;
@@ -56,13 +57,14 @@ iframe {
 .navbar-brand {
     font-weight: 600;
     font-size: 1.3em;
+    margin-top: 15px;
 }
 .nav-item {
     margin-right: .5em;
     margin-bottom: 0em;
 }
 .nav-login {
-    margin: 0em 1em 0em 0em;
+    margin-right: 1em;
 }
 .dropdown-menu {
     margin-bottom: .5em;
@@ -71,7 +73,7 @@ iframe {
     background-color: #f0f0f0;
 }
 .afpbrand {
-    margin: 10px 15px -10px;
+    margin: 10px 15px -27px;
 }
 @media (max-width: 576px) {
     .afpbrand {
